@@ -1,0 +1,11 @@
+C:\Users\capta\source\repos\StansGrocery\StansGrocery\bin\Debug\StansGrocery.exe.config
+C:\Users\capta\source\repos\StansGrocery\StansGrocery\bin\Debug\StansGrocery.exe
+C:\Users\capta\source\repos\StansGrocery\StansGrocery\bin\Debug\StansGrocery.pdb
+C:\Users\capta\source\repos\StansGrocery\StansGrocery\bin\Debug\StansGrocery.xml
+C:\Users\capta\source\repos\StansGrocery\StansGrocery\obj\Debug\StansGrocery.vbproj.AssemblyReference.cache
+C:\Users\capta\source\repos\StansGrocery\StansGrocery\obj\Debug\StansGrocery.Resources.resources
+C:\Users\capta\source\repos\StansGrocery\StansGrocery\obj\Debug\StansGrocery.vbproj.GenerateResource.cache
+C:\Users\capta\source\repos\StansGrocery\StansGrocery\obj\Debug\StansGrocery.vbproj.CoreCompileInputs.cache
+C:\Users\capta\source\repos\StansGrocery\StansGrocery\obj\Debug\StansGrocery.exe
+C:\Users\capta\source\repos\StansGrocery\StansGrocery\obj\Debug\StansGrocery.xml
+C:\Users\capta\source\repos\StansGrocery\StansGrocery\obj\Debug\StansGrocery.pdb
