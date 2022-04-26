@@ -9,3 +9,5 @@ C:\Users\capta\source\repos\StansGrocery\StansGrocery\obj\Debug\StansGrocery.vbp
 C:\Users\capta\source\repos\StansGrocery\StansGrocery\obj\Debug\StansGrocery.exe
 C:\Users\capta\source\repos\StansGrocery\StansGrocery\obj\Debug\StansGrocery.xml
 C:\Users\capta\source\repos\StansGrocery\StansGrocery\obj\Debug\StansGrocery.pdb
+C:\Users\capta\source\repos\StansGrocery\StansGrocery\obj\Debug\StansGrocery.SplashScreenForm.resources
+C:\Users\capta\source\repos\StansGrocery\StansGrocery\obj\Debug\StansGrocery.StansGrocery.resources
