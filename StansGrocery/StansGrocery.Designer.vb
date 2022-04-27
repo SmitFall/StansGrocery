@@ -26,8 +26,11 @@ Partial Class StansGrocery
         Me.SearchTextBox = New System.Windows.Forms.TextBox()
         Me.SearchButton = New System.Windows.Forms.Button()
         Me.DisplayListBox = New System.Windows.Forms.ListBox()
+        Me.ContextMenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.SearchToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.LocationRadioButton = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.CategoryRadioButton = New System.Windows.Forms.RadioButton()
         Me.FilterGroupBox = New System.Windows.Forms.GroupBox()
         Me.FilterComboBox = New System.Windows.Forms.ComboBox()
         Me.TopMenuStrip = New System.Windows.Forms.MenuStrip()
@@ -37,13 +40,10 @@ Partial Class StansGrocery
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContextMenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.SearchToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ContextMenuStrip.SuspendLayout()
         Me.FilterGroupBox.SuspendLayout()
         Me.TopMenuStrip.SuspendLayout()
-        Me.ContextMenuStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'SearchTextBox
@@ -74,6 +74,25 @@ Partial Class StansGrocery
         Me.DisplayListBox.TabIndex = 2
         Me.ToolTip1.SetToolTip(Me.DisplayListBox, "Displays what items are where")
         '
+        'ContextMenuStrip
+        '
+        Me.ContextMenuStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ContextMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SearchToolStripMenuItem1, Me.ExitToolStripMenuItem1})
+        Me.ContextMenuStrip.Name = "ContextMenuStrip"
+        Me.ContextMenuStrip.Size = New System.Drawing.Size(123, 52)
+        '
+        'SearchToolStripMenuItem1
+        '
+        Me.SearchToolStripMenuItem1.Name = "SearchToolStripMenuItem1"
+        Me.SearchToolStripMenuItem1.Size = New System.Drawing.Size(122, 24)
+        Me.SearchToolStripMenuItem1.Text = "&Search"
+        '
+        'ExitToolStripMenuItem1
+        '
+        Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(122, 24)
+        Me.ExitToolStripMenuItem1.Text = "&Exit"
+        '
         'LocationRadioButton
         '
         Me.LocationRadioButton.AutoSize = True
@@ -85,21 +104,21 @@ Partial Class StansGrocery
         Me.LocationRadioButton.Text = "Location"
         Me.LocationRadioButton.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'CategoryRadioButton
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(0, 43)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(86, 21)
-        Me.RadioButton1.TabIndex = 4
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Category"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.CategoryRadioButton.AutoSize = True
+        Me.CategoryRadioButton.Location = New System.Drawing.Point(0, 43)
+        Me.CategoryRadioButton.Name = "CategoryRadioButton"
+        Me.CategoryRadioButton.Size = New System.Drawing.Size(86, 21)
+        Me.CategoryRadioButton.TabIndex = 4
+        Me.CategoryRadioButton.TabStop = True
+        Me.CategoryRadioButton.Text = "Category"
+        Me.CategoryRadioButton.UseVisualStyleBackColor = True
         '
         'FilterGroupBox
         '
         Me.FilterGroupBox.ContextMenuStrip = Me.ContextMenuStrip
-        Me.FilterGroupBox.Controls.Add(Me.RadioButton1)
+        Me.FilterGroupBox.Controls.Add(Me.CategoryRadioButton)
         Me.FilterGroupBox.Controls.Add(Me.LocationRadioButton)
         Me.FilterGroupBox.Location = New System.Drawing.Point(12, 104)
         Me.FilterGroupBox.Name = "FilterGroupBox"
@@ -145,13 +164,13 @@ Partial Class StansGrocery
         'SearchToolStripMenuItem
         '
         Me.SearchToolStripMenuItem.Name = "SearchToolStripMenuItem"
-        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(136, 26)
         Me.SearchToolStripMenuItem.Text = "&Search"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(136, 26)
         Me.ExitToolStripMenuItem.Text = "&Exit"
         '
         'HelpToolStripMenuItem
@@ -164,34 +183,14 @@ Partial Class StansGrocery
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(133, 26)
         Me.AboutToolStripMenuItem.Text = "&About"
-        '
-        'ContextMenuStrip
-        '
-        Me.ContextMenuStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ContextMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SearchToolStripMenuItem1, Me.ExitToolStripMenuItem1})
-        Me.ContextMenuStrip.Name = "ContextMenuStrip"
-        Me.ContextMenuStrip.Size = New System.Drawing.Size(123, 52)
-        '
-        'SearchToolStripMenuItem1
-        '
-        Me.SearchToolStripMenuItem1.Name = "SearchToolStripMenuItem1"
-        Me.SearchToolStripMenuItem1.Size = New System.Drawing.Size(122, 24)
-        Me.SearchToolStripMenuItem1.Text = "&Search"
-        '
-        'ExitToolStripMenuItem1
-        '
-        Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(122, 24)
-        Me.ExitToolStripMenuItem1.Text = "&Exit"
         '
         'StansGrocery
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.ContextMenuStrip = Me.ContextMenuStrip
         Me.Controls.Add(Me.FilterComboBox)
         Me.Controls.Add(Me.FilterGroupBox)
         Me.Controls.Add(Me.DisplayListBox)
@@ -201,11 +200,11 @@ Partial Class StansGrocery
         Me.MainMenuStrip = Me.TopMenuStrip
         Me.Name = "StansGrocery"
         Me.Text = "Form1"
+        Me.ContextMenuStrip.ResumeLayout(False)
         Me.FilterGroupBox.ResumeLayout(False)
         Me.FilterGroupBox.PerformLayout()
         Me.TopMenuStrip.ResumeLayout(False)
         Me.TopMenuStrip.PerformLayout()
-        Me.ContextMenuStrip.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -219,7 +218,7 @@ Partial Class StansGrocery
     Friend WithEvents SearchToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents LocationRadioButton As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents CategoryRadioButton As RadioButton
     Friend WithEvents FilterGroupBox As GroupBox
     Friend WithEvents FilterComboBox As ComboBox
     Friend WithEvents TopMenuStrip As MenuStrip

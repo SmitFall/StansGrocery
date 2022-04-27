@@ -23,19 +23,19 @@ Public Class StansGrocery
             'grab item name
             Input(1, record)
             temp = Split(record, "$$ITM")
-            Food(Row, 0) = record
+            Food(Row, 0) = temp(1)
 
 
             'grab item location
             Input(1, record)
-            temp = Split(record, "##LOCO")
-            Food(Row, 1) = record
+            temp = Split(record, "##LOC")
+            Food(Row, 1) = temp(1)
 
 
             'grab item category
             Input(1, record)
             temp = Split(record, "%%CAT")
-            Food(Row, 2) = record
+            Food(Row, 2) = temp(1)
 
             Row += 1
         Loop
@@ -44,19 +44,45 @@ Public Class StansGrocery
 
     Sub listboxDisplay()
 
-
         For I = Me.Food.GetLowerBound(0) To Me.Food.GetUpperBound(0)
             DisplayListBox.Items.Add($"{Me.Food(I, 0)} : {Me.Food(I, 1)} : {Me.Food(I, 2)}")
 
         Next
-
     End Sub
     Private Sub StansGrocery_Load(sender As Object, e As EventArgs) Handles Me.Load
         LoadDataFile()
         listboxDisplay()
     End Sub
+    Private Sub LocationRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles LocationRadioButton.CheckedChanged
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles SearchTextBox.TextChanged
 
+
+
+    End Sub
+
+    Private Sub CategoryRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles CategoryRadioButton.CheckedChanged
+
+    End Sub
+
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub SearchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SearchToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub SearchToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles SearchToolStripMenuItem1.Click
+
+    End Sub
+
+    Private Sub ExitToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem1.Click
+        Me.Close()
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        AboutForm.Show()
+        Me.Hide()
     End Sub
 End Class
